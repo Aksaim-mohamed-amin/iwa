@@ -1,0 +1,13 @@
+dialog {
+    width: 300px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+#myDialog::backdrop {
+    background: black; 
+    backdrop-filter: blur(20px); 
+    opacity: 0.5;
+}
