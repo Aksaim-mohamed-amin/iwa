@@ -1,0 +1,115 @@
+@startuml
+!define ENTITY_STYLE color #f9f9f9
+
+skinparam class {
+    BackgroundColor ENTITY_STYLE
+    ArrowColor #333333
+    BorderColor #333333
+}
+
+' Entity: User
+class User {
+    - Long id
+    - String name
+    - String email
+    - String password
+    - String role
+    - Team team
+}
+
+' Entity: Team
+class Team {
+    - Long id
+    - String name
+    - User teamLeader
+    + List<User> members
+}
+
+' Entity: Campaign
+class Campaign {
+    - Long id
+    - String name
+    - String subject
+    - String body
+    - Date creationDate
+    - String status
+    - Team team
+}
+
+' Entity: EmailData
+class EmailData {
+    - Long id
+    - String emailAddress
+    - String type
+    - Campaign campaign
+}
+
+' Entity: Offer
+class Offer {
+    - Long id
+    - String name
+    - String sponsor
+    - String url
+    - double conversionRate
+}
+
+' Entity: Report
+class Report {
+    - Long id
+    - Team team
+    - double revenue
+    - int clicks
+    - int opens
+}
+
+' Service Layer
+class UserService {
+    + User createUser(User user)
+    + User getUserById(Long id)
+    + void deleteUser(Long id)
+}
+
+class CampaignService {
+    + Campaign createCampaign(Campaign campaign)
+    + Campaign getCampaignById(Long id)
+    + void deleteCampaign(Long id)
+}
+
+class ReportService {
+    + Report generateReport(Team team)
+}
+
+' Controller Layer
+class UserController {
+    + ResponseEntity<User> createUser(User user)
+    + ResponseEntity<User> getUser(Long id)
+}
+
+class CampaignController {
+    + ResponseEntity<Campaign> createCampaign(Campaign campaign)
+    + ResponseEntity<Campaign> getCampaign(Long id)
+}
+
+class ReportController {
+    + ResponseEntity<Report> getReport(Long teamId)
+}
+
+' Relationships
+User "1" --> "1" Team
+Team "1" --> "0..*" Campaign
+Campaign "1" --> "0..*" EmailData
+Campaign "1" --> "1..*" Offer
+Team "1" --> "1" Report
+Team "1" --> "0..*" User
+
+' Service relationships
+UserService --> User
+CampaignService --> Campaign
+ReportService --> Report
+
+' Controller relationships
+UserController --> UserService
+CampaignController --> CampaignService
+ReportController --> ReportService
+
+@enduml
