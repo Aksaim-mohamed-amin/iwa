@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Thunderbolt Z7",
+        "level": 1,
+        "health": 800,
+        "imageLocation": "/assets/images/heroes/hero1.png"
+    },
+    {
+        "name": "Falcon X1",
+        "level": 2,
+        "health": 900,
+        "imageLocation": "/assets/images/heroes/hero2.png"
+    },
+    {
+        "name": "Skyhunter",
+        "level": 3,
+        "health": 1000,
+        "imageLocation": "/assets/images/heroes/hero3.png"
+    }
+]

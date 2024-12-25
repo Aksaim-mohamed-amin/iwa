@@ -1,0 +1,50 @@
+[
+    {
+        "level": 1,
+        "speed": 10,
+        "damage": 45,
+        "imageLocation": "/assets/images/weapons/weapon1.png"
+    },
+    {
+        "level": 1,
+        "speed": 8,
+        "damage": 50,
+        "imageLocation": "/assets/images/weapons/weapon2.png"
+    },
+    {
+        "level": 1,
+        "speed": 8,
+        "damage": 55,
+        "imageLocation": "/assets/images/weapons/weapon3.png"
+    },
+    {
+        "level": 2,
+        "speed": 12,
+        "damage": 75,
+        "imageLocation": "/assets/images/weapons/weapon4.png"
+    },
+    {
+        "level": 2,
+        "speed": 10,
+        "damage": 90,
+        "imageLocation": "/assets/images/weapons/weapon5.png"
+    },
+    {
+        "level": 2,
+        "speed": 15,
+        "damage": 80,
+        "imageLocation": "/assets/images/weapons/weapon6.png"
+    },
+    {
+        "level": 3,
+        "speed": 6,
+        "damage": 150,
+        "imageLocation": "/assets/images/weapons/weapon7.png"
+    },
+    {
+        "level": 3,
+        "speed": 15,
+        "damage": 150,
+        "imageLocation": "/assets/images/weapons/weapon8.png"
+    }
+]

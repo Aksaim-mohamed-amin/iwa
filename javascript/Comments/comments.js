@@ -49,7 +49,7 @@ newCommentBtn.addEventListener('click', () => {
         commentWrapper.appendChild(comment);
 
         const inputWrapper = document.querySelector('.wraper');
-        document.querySelector('.comments').insertBefore(commentWrapper, inputWrapper);
+        document.querySelector('.comments')q.insertBefore(commentWrapper, inputWrapper);
 
         newComment.value = '';
     }

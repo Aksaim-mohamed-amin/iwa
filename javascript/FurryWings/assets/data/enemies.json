@@ -1,0 +1,92 @@
+[
+    {
+        "type": "airplane",
+        "name": "Falcon X1",
+        "level": 1,
+        "speed": 80,
+        "health": 120,
+        "bladesImage": "null",
+        "imageLocation": "/assets/images/airplanes/airplane1.png"
+    },
+    {
+        "type": "airplane",
+        "name": "Thunderbolt Z7",
+        "level": 1,
+        "speed": 80,
+        "health": 150,
+        "bladesImage": "null",
+        "imageLocation": "/assets/images/airplanes/airplane2.png"
+    },
+    {
+        "type": "airplane",
+        "name": "Skyhunter",
+        "level": 1,
+        "speed": 80,
+        "health": 100,
+        "bladesImage": "null",
+        "imageLocation": "/assets/images/airplanes/airplane3.png"
+    },
+    {
+        "type": "airplane",
+        "name": "Eagle MK5",
+        "level": 2,
+        "speed": 60,
+        "health": 200,
+        "bladesImage": "null",
+        "imageLocation": "/assets/images/airplanes/airplane4.png"
+    },
+    {
+        "type": "airplane",
+        "name": "Hawk Viper",
+        "level": 2,
+        "speed": 50,
+        "health": 220,
+        "bladesImage": "null",
+        "imageLocation": "/assets/images/airplanes/airplane5.png"
+    },
+    {
+        "type": "airplane",
+        "name": "Stormrider",
+        "level": 2,
+        "speed": 70,
+        "health": 250,
+        "bladesImage": "null",
+        "imageLocation": "/assets/images/airplanes/airplane6.png"
+    },
+    {
+        "type": "airplane",
+        "name": "Black Phoenix",
+        "level": 3,
+        "speed": 50,
+        "health": 300,
+        "bladesImage": "null",
+        "imageLocation": "/assets/images/airplanes/airplane7.png"
+    },
+    {
+        "type": "airplane",
+        "name": "Iron Talon",
+        "level": 3,
+        "speed": 30,
+        "health": 125,
+        "bladesImage": "null",
+        "imageLocation": "/assets/images/airplanes/airplane8.png"
+    },
+    {
+        "type": "helicopter",
+        "name": "Sky Scrapper X1",
+        "level": 1,
+        "speed": 90,
+        "health": 300,
+        "bladesImage": "/assets/images/helicopters/helicopter1-blades.png",
+        "imageLocation": "/assets/images/helicopters/helicopter1.png"
+    },
+    {
+        "type": "helicopter",
+        "name": "Sky Scrapper X2",
+        "level": 2,
+        "speed": 70,
+        "health": 350,
+        "bladesImage": "/assets/images/helicopters/helicopter2-blades.png",
+        "imageLocation": "/assets/images/helicopters/helicopter2.png"
+    }
+]
